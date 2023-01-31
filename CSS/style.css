@@ -29,9 +29,11 @@
     --raleway: "Raleway", sans-serif;
 }
 
-body{
+body {
     font-family: var(--raleway);
 }
+
+/* Estilo dos itens do Header */
 
 .containerCabecalho {
     width: 100%;
@@ -61,4 +63,252 @@ body{
     margin-right: .7rem;
     margin-bottom: 1.25rem;
     margin-left: .7rem;
+}
+
+/* Estilo dos itens do Footer */
+
+.containerRodape {
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.rodapeMenu {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.rodapeLink {
+    padding-top: 2px;
+}
+
+.rodapeAssinatura {
+    text-align: end;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* Estilo da Pagina HOME */
+
+.chamadaContainer {
+    height: 20rem;
+    background-color: #f5f5f5;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.titulo {
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.chamadaTexto {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.boxHome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+/* Slideshow */
+
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    padding: 10px;
+    min-width: 20rem;
+    max-width: 20rem;
+    align-items: center;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: fit-content;
+    color: --cor-terciaria1;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    width: fit-content;
+    right: 6.9%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: relative;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Estilo da Pagina DASHBOARD */
+
+.containerCorpo {
+    min-height: 20rem;
+}
+
+.containerMenuDash {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.botaoPai {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 30px;
+    width: 160px;
+    background-color: var(--cor-secundaria1);
+}
+
+.dropdown:hover .botaoPai {
+    background-color: var(--cor-principal1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdownItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Dashboards */
+
+.dropdownText {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+}
+
+.dropdownIcon {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+}
+
+.painel {
+    padding-top: 4rem;
+    min-width: 1200;
+    min-height: 600;
+
+}
+
+.relatorio {
+    padding-top: 2rem;
 }
