@@ -1,0 +1,27 @@
+.chamadaContainer {
+    height: 20rem;
+    background-color: #f5f5f5;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.titulo {
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.chamadaTexto {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.boxHome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+}

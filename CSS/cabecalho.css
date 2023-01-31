@@ -1,0 +1,29 @@
+.containerCabecalho {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: Row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-principal2);
+}
+
+.cabecalhoLogo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.cabecalhoMenu {
+    font-size: 1.1rem;
+    padding-right: 2.5rem;
+    text-align: center;
+}
+
+.cabecalhoLink {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}

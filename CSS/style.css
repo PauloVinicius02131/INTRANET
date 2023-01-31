@@ -1,0 +1,64 @@
+:root {
+    --branco: #FFF;
+
+    /*cores originais */
+    --cor-principal1: #069090;
+    --cor-principal2: #9FD8CF;
+    --cor-principal3: #2ABEB0;
+    --cor-principal4: #11796E;
+    --cor-principal5: #58585A;
+
+    /*Cores Secundárias*/
+    --cor-secundaria1: #C6CAD6;
+    --cor-secundaria2: #5E8290;
+    --cor-secundaria3: #32535C;
+    --cor-secundaria4: #03252F;
+    --cor-secundaria5: #BFB1A6;
+
+    /*Cores Terciárias*/
+    --cor-terciaria1: #233656;
+    --cor-terciaria2: #415B76;
+    --cor-terciaria3: #7B9BA6;
+    --cor-terciaria4: #CDD6D5;
+    --cor-terciaria5: #EEF4F2;
+
+    --fonte-link: #0084FF;
+    --fonte-cinza: #666;
+    --fonte-preta: #000;
+
+    --raleway: "Raleway", sans-serif;
+}
+
+body{
+    font-family: var(--raleway);
+}
+
+.containerCabecalho {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: Row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-principal2);
+}
+
+.cabecalhoLogo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.cabecalhoMenu {
+    font-size: 1.1rem;
+    padding-right: 2.5rem;
+    text-align: center;
+}
+
+.cabecalhoLink {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
